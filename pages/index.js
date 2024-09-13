@@ -109,10 +109,9 @@ const GalleryWidget = () => {
           </div>
           <div
             ref={scrollContainerRef}
-            className="w-full flex   gap-5 "
+            className="w-full flex   gap-4 "
             
           >
-            {/* overflow-x-hidden overflow-y-hidden */}
             {[1, 2, 3].map((index) => (
               <div key={index} className="flex-shrink-0 w-[200px] rounded-md">
                 <img
@@ -128,6 +127,9 @@ const GalleryWidget = () => {
     </div>
   );
 };
+
+// {/* overflow-x-hidden overflow-y-hidden */}
+
 
 
 

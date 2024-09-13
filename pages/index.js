@@ -109,7 +109,7 @@ const GalleryWidget = () => {
           </div>
           <div
             ref={scrollContainerRef}
-            className="w-full flex scroll-smooth overflow-x-hidden overflow-y-hidden   gap-4 "
+            className="w-full flex   gap-4 "
             
           >
             {[1, 2, 3].map((index) => (

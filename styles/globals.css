@@ -41,3 +41,7 @@ body {
   animation: wiggle 0.2s ease-in-out;
 } */
 
+.shadow-bottom-right {
+  box-shadow: 4px 4px 10px rgba(7, 7, 7, 0.898);
+}
+

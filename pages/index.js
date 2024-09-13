@@ -15,7 +15,7 @@ const SalesRepCard = () => {
   };
 
   return (
-    <div className=" w-[720px] h-[316px]  flex flex-row bg-[#363C43] rounded-[20px] shadow-xl pl-[12px] ">
+    <div className=" w-[720px] h-[316px]  flex flex-row bg-[#363C43] rounded-[20px] shadow-xl pl-[12px] shadow-bottom-right">
         <div className=' my-[20px]  flex flex-col items-center justify-between'>
           {/* svg file here */}
           <img src="/question.svg" alt="Question Bars"  width={24} />
@@ -79,7 +79,7 @@ const GalleryWidget = () => {
     });
   };
   return (
-    <div className=" w-[720px] h-[330px]  flex flex-row bg-[#363C43] rounded-[20px] shadow-xl pl-[12px] pr-[30px] ">
+    <div className=" w-[720px] h-[330px]  flex flex-row bg-[#363C43] rounded-[20px] shadow-xl pl-[12px] pr-[30px] shadow-bottom-right ">
         <div className=' my-[20px]  flex flex-col items-center justify-between'>
           <img src="/question.svg" alt="Question Bars"  width={24} />
           <img src="/bars.svg" alt="Question Bars"  width={20} height={30} />
@@ -109,7 +109,7 @@ const GalleryWidget = () => {
           </div>
           <div
             ref={scrollContainerRef}
-            className="w-full flex   gap-4 "
+            className="w-full flex scroll-smooth overflow-x-hidden overflow-y-hidden   gap-4 "
             
           >
             {[1, 2, 3].map((index) => (
@@ -153,12 +153,12 @@ const MainLayout = () => {
         <div className="w-[836px] h-[689px] bg-[#616161]/80 rounded-[27px] border border-[#95bee6]"></div>
         <div className="space-y-[23px]">
           <SalesRepCard />
-          <div class="relative flex justify-center">
-            <div class="h-[4px] w-[612px] bg-gradient-to-b from-[#282828] to-[#f8f8f822] shadow-lg shadow-black rounded-[3px]"></div>
+          <div class="relative flex justify-center ">
+            <div class="shadow-bottom-right h-[4px] w-[612px] bg-gradient-to-b from-[#282828] to-[#f8f8f822] shadow-lg shadow-black rounded-[3px]"></div>
           </div>
           <GalleryWidget />
           <div class="relative flex justify-center">
-            <div class="h-[4px] w-[612px] bg-gradient-to-b from-[#282828] to-[#f8f8f822] shadow-lg shadow-black  rounded-[3px]"></div>
+            <div class="shadow-bottom-right h-[4px] w-[612px] bg-gradient-to-b from-[#282828] to-[#f8f8f822] shadow-lg shadow-black  rounded-[3px]"></div>
           </div>
         </div>
       </div>
